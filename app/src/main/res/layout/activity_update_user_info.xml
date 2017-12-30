@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.niu.cs.z1805839.photoarts1.UpdateUserInfo">
+
+    <EditText
+        android:id="@+id/regName"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/regPwd"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/regName"
+        android:layout_below="@+id/regName"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/regApt"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regSt"
+        android:layout_alignBottom="@+id/regSt"
+        android:layout_toEndOf="@+id/regState"
+        android:ems="10"
+        android:hint="Apartment"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/regSt"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/regPwd"
+        android:layout_below="@+id/regPwd"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Street"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/regCity"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/regSt"
+        android:layout_below="@+id/regApt"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/regState"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regCity"
+        android:layout_alignBottom="@+id/regCity"
+        android:layout_toEndOf="@+id/regCity"
+        android:ems="10"
+        android:hint="State"
+        android:inputType="textPersonName"
+        android:maxLength="3" />
+
+
+    <EditText
+        android:id="@+id/regEmail"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/regCity"
+        android:layout_below="@+id/regCity"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/regEmail"
+        android:layout_below="@+id/regEmail"
+        android:layout_marginTop="43dp"
+        android:text="UPDATE INFO"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/regZip"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regState"
+        android:layout_alignBottom="@+id/regState"
+        android:layout_alignEnd="@+id/regApt"
+        android:ems="10"
+        android:hint="Zip Code"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+</RelativeLayout>

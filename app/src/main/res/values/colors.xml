@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="MatteBlack">#000000</color>
+    <color name="MatteWhite">#FFFFFF</color>
+    <color name="BrushedSilver">#C0C0C0</color>
+    <color name="MatteBrass">#B5A642</color>
+    <color name="LightGrey">#f8f7f7</color>
+    <color name="WoodFrame">#663300</color>
+
+
+</resources>

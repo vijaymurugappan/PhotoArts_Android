@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">PhotoArts</string>
+    <string name="cart">CART</string>
+    <string name="title_activity_shopping_cart">ShoppingCart</string>
+    <string name="delete">DELETE</string>
+    <string name="logout">LOGOUT</string>
+
+    <string-array name="FrameSize">
+        <item>7" X 5"</item>
+        <item>10" X 8"</item>
+        <item>14" X 11"</item>
+        <item>20" X 16"</item>
+        <item>24" X 18"</item>
+        <item>40" X 30"</item>
+        <item>54" X 40"</item>
+    </string-array>
+
+    <string-array name="FrameColor">
+        <item>No Frame</item>
+        <item>Matte Black</item>
+        <item>Matte White</item>
+        <item>Brushed Silver</item>
+        <item>Matte Brass</item>
+        <item>Light Grey</item>
+        <item>Wooden Frame</item>
+    </string-array>
+
+
+    <string-array name="shipFee">
+
+        <item>Standard $19.95 (estimate delivery date is 12 days from the current date) -- default</item>
+
+        <item>Priority $24.95 (estimate delivery date is 10 days from the current date)</item>
+
+        <item> Expedited $34.95 (estimate delivery date is 8 days from the current date)</item>
+
+        <item> Rush $50.00 (estimated delivery date is 5 days from the current date)</item>
+
+    </string-array>
+    <string name="title_activity_previous_purchased_item_details">PreviousPurchasedItemDetails
+    </string>
+
+
+</resources>

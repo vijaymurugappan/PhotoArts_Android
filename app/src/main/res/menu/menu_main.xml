@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.niu.cs.z1805839.photoarts1.PhotoCollection">
+
+    <item
+        android:id="@+id/action_updateUserInfo"
+        android:title="UPDATEUSERINFO"
+        android:icon="@drawable/update"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_add"
+        android:title="@string/cart"
+        android:icon="@drawable/shoppingcart"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="LOGOUT"
+        android:icon="@drawable/logout"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

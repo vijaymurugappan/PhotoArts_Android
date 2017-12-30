@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.niu.cs.z1805839.photoarts1.CheckoutSummary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+        <TextView
+            android:id="@+id/textViewShipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHIPPING ADDRESS"
+            android:textSize="20sp"
+            android:layout_marginTop="11dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/shipstreet"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewShipping"
+            android:layout_marginTop="15dp"
+            android:text="STREET"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/shipApartment"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/shipstreet"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/shipstreet"
+            android:text="Apartment"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/shipCity"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/shipstreet"
+            android:layout_marginTop="16dp"
+            android:text="CITY"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/shipState"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/shipCity"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/textViewShipping"
+            android:text="STATE"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/shipZipCode"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/shipState"
+            android:layout_alignBottom="@+id/shipState"
+            android:layout_alignEnd="@+id/shipApartment"
+            android:text="ZIPCODE"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewBillingAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="BILLING ADDRESS"
+            android:textSize="20sp"
+            android:layout_below="@+id/shipCity"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/billstreet"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:text="STREET"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/textViewBillingAddress"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/billApartment"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:text="Apartment"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/billstreet"
+            android:layout_alignBottom="@+id/billstreet"
+            android:layout_alignEnd="@+id/shipZipCode" />
+
+        <TextView
+            android:id="@+id/billCity"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="11dp"
+            android:text="CITY"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/billstreet"
+            android:layout_toStartOf="@+id/shipState" />
+
+        <TextView
+            android:id="@+id/billState"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="STATE"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_alignBottom="@+id/billCity"
+            android:layout_alignStart="@+id/shipState" />
+
+        <TextView
+            android:id="@+id/billZipCode"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="ZIPCODE"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/billState"
+            android:layout_alignBottom="@+id/billState"
+            android:layout_alignEnd="@+id/billApartment" />
+
+        <TextView
+            android:id="@+id/ShippingStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billCity"
+            android:layout_marginEnd="13dp"
+            android:layout_marginTop="31dp"
+            android:layout_toStartOf="@+id/billApartment"
+            android:text="SHIPPING STATUS"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/productCost"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/billCity"
+            android:layout_below="@+id/ShippingStatus"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="18dp"
+            android:text="Cost of Product"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewProductCost"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignEnd="@+id/billZipCode"
+            android:layout_alignTop="@+id/productCost"
+            android:layout_marginEnd="38dp"
+            android:text="$0.00"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/shippingFee"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="14dp"
+            android:text="Shipping Fee"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/productCost"
+            android:layout_alignStart="@+id/productCost" />
+
+        <TextView
+            android:id="@+id/textViewShippingFee"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="$0.00"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/shippingFee"
+            android:layout_alignBottom="@+id/shippingFee"
+            android:layout_alignStart="@+id/textViewProductCost" />
+
+        <TextView
+            android:id="@+id/tax"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:text="Tax"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/shippingFee"
+            android:layout_toStartOf="@+id/shipState"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/textViewTax"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="$3.50"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/tax"
+            android:layout_alignBottom="@+id/tax"
+            android:layout_alignStart="@+id/textViewShippingFee" />
+
+        <TextView
+            android:id="@+id/grandTotal"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="17dp"
+            android:text="Grand Total"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/tax"
+            android:layout_alignStart="@+id/shippingFee" />
+
+        <TextView
+            android:id="@+id/textViewGrandTotal"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="$0.00"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/grandTotal"
+            android:layout_alignBottom="@+id/grandTotal"
+            android:layout_alignStart="@+id/textViewTax" />
+
+        <TextView
+            android:id="@+id/textViewPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="PAYMENT METHOD"
+            android:textSize="20sp"
+            android:layout_below="@+id/grandTotal"
+            android:layout_alignEnd="@+id/tax" />
+
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/textViewPayment"
+            android:layout_below="@+id/textViewPayment"
+            android:layout_marginTop="14dp"
+            android:text="FIRST NAME"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="21dp"
+            android:text="LAST NAME"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/firstName"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/cardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/firstName"
+            android:layout_below="@+id/lastName"
+            android:layout_marginTop="13dp"
+            android:text="CARD NUMBER"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/expiryDate"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cardNumber"
+            android:layout_below="@+id/cardNumber"
+            android:layout_marginTop="22dp"
+            android:text="EXPIRY DATE"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cvv"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/expiryDate"
+            android:layout_alignEnd="@+id/textViewGrandTotal"
+            android:text="CVV"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/emailaddress"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/expiryDate"
+            android:layout_below="@+id/expiryDate"
+            android:layout_marginTop="27dp"
+            android:text="EMAIL ADDRESS"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/purchase"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/holo_red_light"
+            android:text="PURCHASE"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="13dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

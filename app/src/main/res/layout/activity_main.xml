@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.niu.cs.z1805839.photoarts1.MainActivity">
+
+    <EditText
+        android:id="@+id/loginPwd"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/loginName"
+        android:layout_below="@+id/loginName"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/loginName"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginPwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="LOGIN" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="if you havent signed up yet?"
+        android:textSize="18sp"
+        android:layout_above="@+id/loginRegBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:id="@+id/loginRegBtn"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/loginButton"
+        android:layout_marginBottom="41dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="22dp"
+        android:text="Forgot Username or Password??"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/loginButton"
+        android:layout_alignStart="@+id/loginButton"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="14dp"
+        android:text="Get Username or Password" />
+</RelativeLayout>
